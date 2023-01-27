@@ -31,7 +31,7 @@ header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 2rem 6rem;
 }
 
 nav ul{
@@ -47,15 +47,15 @@ nav ul{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 10vw 12vw;
+    padding: 6rem 10rem 10rem;
+    gap: 1.6rem;
 }
 
 #mainLeftCol{
-    display: flex;
-    flex-direction: column;
-    flex-flow: wrap;    
+    display: flex;    
+    flex-flow: column wrap;
     width: 48rem;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 #mainRightCol img{    
@@ -67,6 +67,7 @@ nav ul{
 #heroSection h1{
     font-size: 48px;
     font-weight: 800;
+    line-height: 90%;
     color: #f9faf8;
 }
 
@@ -78,18 +79,19 @@ nav ul{
     border-radius: 8px;
     border: 0px;
     text-align: center;
-    padding: 5px;
+    padding: 0.2rem;
 }
 
 #randomInfoSection{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap;    
+    justify-content: space-evenly;
     align-items: center;
-    padding: 4vw 8vw;
-    gap: 2vw;
+    padding: 6rem 4rem;
+    gap: 2rem;
 }
 
-#randomInfoSection h1{  
+#randomInfoSection h2{  
     font-size: 36px;
     font-weight: 800;
     color: #1f2937;    
@@ -98,22 +100,28 @@ nav ul{
 #infoItemsList{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-    gap: 5vw;    
-    
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.infoPair{
+    display: flex;    
+    gap: 1rem;
 }
 
 .infoItem {
     display: flex;
-    flex-flow: column nowrap;
-    gap: 1vw;    
-    max-width: 14vw;
+    flex-flow: column nowrap;        
+    flex-shrink: 2;
+    gap: 1rem;    
+    max-width: 10rem;        
 }
 
 .infoItem img {
     border: 3px solid #3882f6;
     border-radius: 8px;
-    max-width: 16vw;
+    max-width: 16rem;
 }
 
 .infoItem p {
@@ -125,7 +133,8 @@ nav ul{
     background-color: #e5e7eb;
     display: flex;
     justify-content: center;    
-    padding: 8vw 16vw;
+    padding: 8rem 8rem;
+    gap: 1rem;
 }
 
 #quoteSection p{
@@ -137,22 +146,23 @@ nav ul{
 
 #quoteSection figcaption{
     text-align: end;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 #bannerSection{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     padding: 4rem; 
 }
 
 .banner {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     background-color: #3882f6;
     color: #f9faf8;
-    gap: 6rem;
-    padding: 3rem;
+    gap: 4rem;
+    padding: 4rem;
     border-radius: 8px;
 }
 
@@ -170,4 +180,69 @@ footer {
     padding: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .secondary, .infoItem p{
+        font-size: 12px;
+    }
 
+    #headerLogo{
+        font-size: 16px;
+    }
+    
+    .navlink{
+        display: block;
+    }
+    header{        
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 1rem 2rem;        
+        gap: 1rem;
+    }
+    
+    #mainRightCol{        
+        display: none;
+    }
+    
+    #heroSection{
+        flex-wrap: wrap;
+        padding: 2rem 4rem 6rem 6rem;
+    }
+    #heroSection h1{
+        font-size: 32px;
+    }
+    #randomInfoSection{
+        padding: 2rem 2rem;
+    }    
+    #randomInfoSection h2, #quoteSection p{
+        font-size: 20px;
+    }
+    #infoItemsList{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .infoItem{
+        align-items: center;
+    }
+    
+    #quoteSection{
+        padding: 4rem 4rem;
+    }
+    
+    #bannerSection{
+        padding: 2rem;
+    }
+    .banner p{
+        font-size: 8px;
+    }
+    .banner h3, .button{
+        font-size: 10px;
+    }
+    .banner{
+        padding: 0.8rem;
+    }    
+  }
+
+li a:hover{
+    color: #3882f6;
+}

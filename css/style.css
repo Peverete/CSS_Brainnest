@@ -1,0 +1,173 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;    
+}
+
+#headerLogo{
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+header, main, footer{
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+nav ul{
+    list-style-type: none;    
+}
+
+.navlink {
+    text-decoration: none;
+    margin: 10px;
+}
+
+#heroSection{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10vw 12vw;
+}
+
+#mainLeftCol{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;    
+    width: 48rem;
+    gap: 1rem;
+}
+
+#mainRightCol img{    
+    max-width: 30rem;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+#heroSection h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.button{
+    color: #f9faf8;
+    background-color: #3882f6;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+#randomInfoSection{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 4vw 8vw;
+    gap: 2vw;
+}
+
+#randomInfoSection h1{  
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;    
+}
+
+#infoItemsList{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 5vw;    
+    
+}
+
+.infoItem {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1vw;    
+    max-width: 14vw;
+}
+
+.infoItem img {
+    border: 3px solid #3882f6;
+    border-radius: 8px;
+    max-width: 16vw;
+}
+
+.infoItem p {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+#quoteSection {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;    
+    padding: 8vw 16vw;
+}
+
+#quoteSection p{
+   font-size: 36px;
+   font-weight: 300;
+   font-style: italic;
+   color: #1f2937;
+}
+
+#quoteSection figcaption{
+    text-align: end;
+    font-weight: bold;
+}
+
+#bannerSection{
+    display: flex;
+    justify-content: center;    
+    padding: 4rem; 
+}
+
+.banner {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #3882f6;
+    color: #f9faf8;
+    gap: 6rem;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.banner p {
+    font-size: 18px;    
+}
+
+.banner button{
+    border: 2px solid #f9faf8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+

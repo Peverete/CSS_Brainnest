@@ -12,17 +12,12 @@ body {
     font-size: 24px;
 }
 
-main{
-    display: flex;
-    flex-flow: row wrap;
-}
-
 .secondary {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-header, main, footer{
+header, #heroSection, footer{
     background-color: #1f2937;
     color: #ffffff;
 }
@@ -102,12 +97,7 @@ nav ul{
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    gap: 2rem;
-}
-
-.infoPair{
-    display: flex;    
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .infoItem {
@@ -162,7 +152,7 @@ nav ul{
     background-color: #3882f6;
     color: #f9faf8;
     gap: 4rem;
-    padding: 4rem;
+    padding: 3rem;
     border-radius: 8px;
 }
 
